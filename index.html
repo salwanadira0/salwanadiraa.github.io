@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Perpustakaan Digital | Salwa Nadira</title>
+<title>Digital Library | Salwa Nadira</title>
 
 <style>
 *{
@@ -14,8 +14,8 @@
 }
 
 body{
-    background-color:#f8f6f2;
-    color:#3e3e3e;
+    background-color:#fdfaf6;
+    color:#4a4a4a;
 }
 
 /* HEADER */
@@ -24,28 +24,29 @@ header{
     width:100%;
     top:0;
     left:0;
-    background:rgba(60, 47, 40, 0.95);
+    background:rgba(255, 248, 240, 0.95);
     padding:18px 80px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    transition:0.4s;
+    transition:0.3s;
     z-index:1000;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
 }
 
 header.scrolled{
-    background:#2c221c;
-    padding:12px 80px;
+    background:#f6efe6;
+    padding:14px 80px;
 }
 
 header h1{
-    color:#f5f1ea;
+    color:#5c4b3b;
     font-size:20px;
     letter-spacing:1px;
 }
 
 nav a{
-    color:#f5f1ea;
+    color:#5c4b3b;
     text-decoration:none;
     margin-left:30px;
     font-size:14px;
@@ -54,13 +55,13 @@ nav a{
 }
 
 nav a:hover{
-    color:#d7ccc8;
+    color:#a1887f;
 }
 
 /* HERO */
 .hero{
     height:100vh;
-    background:url('https://images.unsplash.com/photo-1495446815901-a7297e633e8d') no-repeat center center/cover;
+    background:url('https://images.unsplash.com/photo-1507842217343-583bb7270b66') no-repeat center center/cover;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -69,49 +70,53 @@ nav a:hover{
 }
 
 .hero-text{
-    background:rgba(0,0,0,0.55);
+    background:rgba(255,255,255,0.85);
     padding:60px;
-    border-radius:8px;
-    color:#fff;
-    max-width:700px;
-    animation:fadeIn 1.8s ease-in-out;
+    border-radius:10px;
+    color:#4a4a4a;
+    max-width:720px;
+    animation:fadeIn 1.5s ease-in-out;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
 }
 
 .hero-text h2{
-    font-size:42px;
+    font-size:40px;
     margin-bottom:20px;
     font-weight:normal;
-    letter-spacing:2px;
+    letter-spacing:1px;
+    color:#5c4b3b;
 }
 
 .hero-text p{
-    font-size:18px;
-    line-height:1.6;
+    font-size:17px;
+    line-height:1.8;
 }
 
 /* CONTENT */
 .content{
     padding:100px 80px;
     text-align:center;
+    background-color:#fdfaf6;
 }
 
 .content h3{
-    font-size:28px;
+    font-size:26px;
     margin-bottom:25px;
     letter-spacing:1px;
+    color:#5c4b3b;
 }
 
 .content p{
-    max-width:800px;
+    max-width:820px;
     margin:auto;
-    line-height:1.8;
+    line-height:1.9;
     font-size:17px;
 }
 
 /* FOOTER */
 footer{
-    background:#2c221c;
-    color:#f5f1ea;
+    background:#f6efe6;
+    color:#5c4b3b;
     text-align:center;
     padding:25px;
     font-size:14px;
@@ -120,7 +125,7 @@ footer{
 
 /* ANIMATION */
 @keyframes fadeIn{
-    from{opacity:0; transform:translateY(20px);}
+    from{opacity:0; transform:translateY(15px);}
     to{opacity:1; transform:translateY(0);}
 }
 
@@ -133,36 +138,37 @@ html{
 <body>
 
 <header id="navbar">
-    <h1>Perpustakaan Digital | Salwa Nadira</h1>
+    <h1>Digital Library | Salwa Nadira</h1>
     <nav>
-        <a href="#">Beranda</a>
-        <a href="#">Tentang</a>
-        <a href="#">Koleksi</a>
-        <a href="#">Kontak</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Collection</a>
+        <a href="#">Contact</a>
     </nav>
 </header>
 
 <section class="hero">
     <div class="hero-text">
-        <h2>Selamat Datang</h2>
+        <h2>Welcome to the Digital Library</h2>
         <p>
-            Perpustakaan Digital ini dirancang sebagai ruang literasi yang modern dan terstruktur, 
-            menghadirkan koleksi bacaan serta referensi yang dapat diakses secara praktis dan nyaman.
+            A refined digital space dedicated to reading, research, and thoughtful exploration.  
+            Designed to provide accessible collections within a calm and structured environment.
         </p>
     </div>
 </section>
 
 <section class="content">
-    <h3>Tentang Perpustakaan</h3>
+    <h3>About the Library</h3>
     <p>
-        Perpustakaan Digital yang menyediakan akses informasi secara efektif dan efisien. 
-        Dengan tampilan yang sederhana dan elegan, platform ini mendukung aktivitas membaca, penelitian, 
-        dan pengembangan pengetahuan dalam satu ruang digital terpadu.
+        The Digital Library of Salwa Nadira is developed as a personal digital archive 
+        that presents curated resources in an organized and user-friendly format.  
+        This platform supports academic activities, independent study, 
+        and continuous intellectual growth in a seamless digital experience.
     </p>
 </section>
 
 <footer>
-    © 2026 Perpustakaan Digital Salwa Nadira. Seluruh Hak Dilindungi.
+    © 2026 Digital Library Salwa Nadira. All Rights Reserved.
 </footer>
 
 <script>
