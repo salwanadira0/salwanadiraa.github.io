@@ -60,54 +60,51 @@ nav a:hover{
 
 /* HERO */
 .hero{
+    position:relative;
     height:100vh;
-    background:url('https://images.unsplash.com/photo-1507842217343-583bb7270b66') no-repeat center center/cover;
+    overflow:hidden;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
-    padding:20px;
 }
 
+/* Background Slides */
+.slide{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center;
+    opacity:0;
+    transition:opacity 2s ease-in-out;
+}
+
+.slide.active{
+    opacity:1;
+}
+
+/* Overlay content */
 .hero-text{
+    position:relative;
     background:rgba(255,255,255,0.88);
     padding:60px;
     border-radius:10px;
-    color:#4a4a4a;
     max-width:650px;
     box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    z-index:2;
 }
 
 .hero-text h2{
     font-size:38px;
     margin-bottom:15px;
     font-weight:normal;
-    letter-spacing:1px;
     color:#5c4b3b;
 }
 
 .hero-text p{
     font-size:17px;
     line-height:1.7;
-}
-
-/* CONTENT */
-.content{
-    padding:100px 80px;
-    text-align:center;
-}
-
-.content h3{
-    font-size:24px;
-    margin-bottom:20px;
-    color:#5c4b3b;
-}
-
-.content p{
-    max-width:750px;
-    margin:auto;
-    line-height:1.8;
-    font-size:16px;
 }
 
 /* FOOTER */
@@ -131,34 +128,44 @@ html{
     <h1>Perpustakaan Digital | Salwa Nadira</h1>
     <nav>
         <a href="#">Beranda</a>
-        <a href="#">Tentang</a>
         <a href="#">Koleksi</a>
         <a href="#">Kontak</a>
     </nav>
 </header>
 
 <section class="hero">
+
+    <!-- 4 Background Slides -->
+    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1507842217343-583bb7270b66');"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1495446815901-a7297e633e8d');"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da');"></div>
+    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1512820790803-83ca734da794');"></div>
+
+    <!-- Text Overlay -->
     <div class="hero-text">
         <h2>Selamat Datang</h2>
         <p>
-            Perpustakaan Digital yang menyediakan koleksi bacaan dan referensi 
-            dalam satu ruang belajar yang terstruktur dan mudah diakses.
+            Perpustakaan Digital yang menyediakan akses bacaan dan referensi
+            dalam satu ruang belajar yang terstruktur dan nyaman.
         </p>
     </div>
-</section>
 
-<section class="content">
-    <h3>Tentang Perpustakaan</h3>
-    <p>
-        Platform ini dikembangkan sebagai ruang literasi digital untuk mendukung 
-        kegiatan membaca, pencarian referensi, dan pengembangan pengetahuan 
-        secara praktis dan nyaman.
-    </p>
 </section>
 
 <footer>
     © 2026 Perpustakaan Digital
 </footer>
+
+<script>
+const slides = document.querySelectorAll('.slide');
+let index = 0;
+
+setInterval(() => {
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}, 5000); // ganti foto tiap 5 detik
+</script>
 
 <script>
 window.addEventListener("scroll", function(){
