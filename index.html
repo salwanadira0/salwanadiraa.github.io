@@ -1,1 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perpustakaan Pribadi Salwa Nadira</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Georgia', serif;
+}
+
+body{
+    background-color:#f5f1ea;
+}
+
+/* HEADER */
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(92, 64, 51, 0.9);
+    padding:15px 60px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    transition:0.4s;
+    z-index:1000;
+}
+
+header.scrolled{
+    background:#3e2723;
+    padding:10px 60px;
+}
+
+header h1{
+    color:white;
+    font-size:22px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffd54f;
+}
+
+/* HERO */
+.hero{
+    height:100vh;
+    background:url('https://images.unsplash.com/photo-1507842217343-583bb7270b66') no-repeat center center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    padding:20px;
+}
+
+.hero-text{
+    background:rgba(0,0,0,0.6);
+    padding:40px;
+    border-radius:15px;
+    animation:fadeIn 2s ease-in-out;
+}
+
+.hero-text h2{
+    font-size:45px;
+    margin-bottom:15px;
+}
+
+.hero-text p{
+    font-size:20px;
+}
+
+/* CONTENT */
+.content{
+    padding:80px 60px;
+    text-align:center;
+}
+
+.content h3{
+    font-size:30px;
+    margin-bottom:20px;
+    color:#5d4037;
+}
+
+.content p{
+    max-width:800px;
+    margin:auto;
+    line-height:1.7;
+    color:#4e342e;
+}
+
+/* FOOTER */
+footer{
+    background:#3e2723;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+/* ANIMATION */
+@keyframes fadeIn{
+    from{opacity:0; transform:translateY(20px);}
+    to{opacity:1; transform:translateY(0);}
+}
+
+html{
+    scroll-behavior:smooth;
+}
+</style>
+</head>
+
+<body>
+
+<header id="navbar">
+    <h1>Perpustakaan Salwa Nadira</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tentang</a>
+        <a href="#">Koleksi</a>
+        <a href="#">Kontak</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-text">
+        <h2>Welcome</h2>
+        <p>Selamat Datang di Perpustakaan Pribadi Salwa Nadira</p>
+    </div>
+</section>
+
+<section class="content">
+    <h3>Tentang Perpustakaan</h3>
+    <p>
+        Perpustakaan pribadi ini merupakan ruang literasi digital yang menyediakan berbagai koleksi bacaan,
+        referensi akademik, dan sumber pengetahuan lainnya. Website ini dirancang dengan nuansa hangat 
+        seperti suasana perpustakaan yang nyaman dan tenang untuk membaca.
+    </p>
+</section>
+
+<footer>
+    © 2026 Perpustakaan Pribadi Salwa Nadira | All Rights Reserved
+</footer>
+
+<script>
+window.addEventListener("scroll", function(){
+    let header = document.getElementById("navbar");
+    header.classList.toggle("scrolled", window.scrollY > 50);
+});
+</script>
+
+</body>
+</html>
 
