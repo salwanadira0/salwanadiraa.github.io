@@ -48,7 +48,7 @@ header h1{
 nav a{
     color:#5c4b3b;
     text-decoration:none;
-    margin-left:30px;
+    margin-left:28px;
     font-size:14px;
     letter-spacing:1px;
     transition:0.3s;
@@ -84,7 +84,7 @@ nav a:hover{
     opacity:1;
 }
 
-/* Overlay content */
+/* Overlay Content */
 .hero-text{
     position:relative;
     background:rgba(255,255,255,0.88);
@@ -124,55 +124,4 @@ html{
 
 <body>
 
-<header id="navbar">
-    <h1>Perpustakaan Digital | Salwa Nadira</h1>
-    <nav>
-        <a href="#">Beranda</a>
-        <a href="#">Koleksi</a>
-        <a href="#">Kontak</a>
-    </nav>
-</header>
-
-<section class="hero">
-
-    <!-- 4 Background Slides -->
-    <div class="slide active" style="background-image:url('https://images.unsplash.com/photo-1507842217343-583bb7270b66');"></div>
-    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1495446815901-a7297e633e8d');"></div>
-    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da');"></div>
-    <div class="slide" style="background-image:url('https://images.unsplash.com/photo-1512820790803-83ca734da794');"></div>
-
-    <!-- Text Overlay -->
-    <div class="hero-text">
-        <h2>Selamat Datang</h2>
-        <p>
-            Perpustakaan Digital yang menyediakan akses bacaan dan referensi
-            dalam satu ruang belajar yang terstruktur dan nyaman.
-        </p>
-    </div>
-
-</section>
-
-<footer>
-    © 2026 Perpustakaan Digital
-</footer>
-
-<script>
-const slides = document.querySelectorAll('.slide');
-let index = 0;
-
-setInterval(() => {
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-}, 5000); // ganti foto tiap 5 detik
-</script>
-
-<script>
-window.addEventListener("scroll", function(){
-    let header = document.getElementById("navbar");
-    header.classList.toggle("scrolled", window.scrollY > 50);
-});
-</script>
-
-</body>
-</html>
+<header id="nav
