@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Info Event Terbaru</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #fdfdfd; color: #333; line-height: 1.6; }
+
+        /* Navigasi Simpel */
+        nav {
+            background: #1a1a1a;
+            padding: 15px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        nav a { color: white; text-decoration: none; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        nav a:hover { color: #f39c12; }
+
+        .container { max-width: 800px; margin: 20px auto; padding: 20px; }
+
+        /* Judul Section */
+        h2 { border-left: 5px solid #f39c12; padding-left: 10px; margin-bottom: 20px; margin-top: 40px; }
+
+        /* Box Video */
+        .video-box {
+            background: #000;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            aspect-ratio: 16 / 9;
+        }
+        iframe { width: 100%; height: 100%; border: none; }
+
+        /* List Event */
+        .event-card {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: 0.3s;
+        }
+        .event-card:hover { transform: scale(1.02); box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .event-info h3 { margin-bottom: 5px; color: #2c3e50; }
+        .event-info p { font-size: 14px; color: #7f8c8d; }
+        .btn-daftar {
+            background: #f39c12;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .event-card { flex-direction: column; align-items: flex-start; gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#video">Nonton Video</a>
+    <a href="#jadwal">Jadwal Event</a>
+</nav>
+
+<div class="container">
+    
+    <section id="video">
+        <h2>Video Dokumentasi</h2>
+        <div class="video-box">
+            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section id="jadwal">
+        <h2>Event Akan Datang</h2>
+
+        <div class="event-card">
+            <div class="event-info">
+                <h3>Workshop Fotografi</h3>
+                <p>📅 15 Mei 2026 • 📍 Studio Cahaya, Medan</p>
+            </div>
+            <a href="#" class="btn-daftar">Daftar Sekarang</a>
+        </div>
+
+        <div class="event-card">
+            <div class="event-info">
+                <h3>Seminar Kewirausahaan</h3>
+                <p>📅 22 Mei 2026 • 📍 Hotel Grand City</p>
+            </div>
+            <a href="#" class="btn-daftar">Daftar Sekarang</a>
+        </div>
+
+        <div class="event-card">
+            <div class="event-info">
+                <h3>Nobar Final Champion</h3>
+                <p>📅 30 Mei 2026 • 📍 Cafe Bola Mania</p>
+            </div>
+            <a href="#" class="btn-daftar">Daftar Sekarang</a>
+        </div>
+
+    </section>
+
+</div>
+
+<footer style="text-align: center; padding: 40px; color: #999; font-size: 12px;">
+    &copy; 2026 Portal Event Indonesia
+</footer>
+
+</body>
+</html>
