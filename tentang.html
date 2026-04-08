@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami | SANADI Library</title>
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; font-family:'Segoe UI', sans-serif; }
+        body { background:#fdfaf6; color:#4a4b4a; line-height: 1.6; padding-top: 80px; }
+        
+        /* Reusable Header Style */
+        header {
+            position:fixed; width:100%; top:0; background:rgba(255,248,240,0.98);
+            padding:15px 5%; display:flex; justify-content:space-between;
+            align-items:center; z-index:1000; box-shadow:0 2px 15px rgba(0,0,0,0.1);
+        }
+        .brand { color:#5c4b3b; font-size:22px; font-weight: bold; text-decoration:none; }
+
+        /* Content Section */
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 5%; }
+        
+        .about-section { text-align: center; margin-bottom: 60px; }
+        .about-section h1 { color: #5c4b3b; margin-bottom: 20px; font-size: 32px; }
+        .about-section p { font-size: 18px; color: #666; max-width: 800px; margin: 0 auto; }
+
+        /* Librarian Profile Card */
+        .profile-card {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            margin-top: 40px;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #d4a373;
+        }
+        .profile-info h2 { color: #5c4b3b; margin-bottom: 10px; }
+        .profile-info .role { color: #d4a373; font-weight: bold; margin-bottom: 15px; display: block; }
+        
+        .btn-cv {
+            display: inline-block;
+            padding: 10px 25px;
+            background: #5c4b3b;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+        .btn-cv:hover { background: #d4a373; }
+
+        .social-link {
+            margin-top: 15px;
+            display: block;
+            color: #444;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .social-link:hover { color: #d4a373; }
+
+        @media (max-width: 768px) {
+            .profile-card { flex-direction: column; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="brand">📚 SANADI Lib</a>
+</header>
+
+<div class="container">
+    <section class="about-section">
+        <h1>Tentang Perpustakaan SANADI</h1>
+        <p>
+            SANADI Library merupakan unit perpustakaan perguruan tinggi yang berkomitmen untuk mendukung 
+            kegiatan tri dharma perguruan tinggi melalui penyediaan akses informasi, literasi digital, 
+            dan koleksi referensi ilmiah yang berkualitas bagi mahasiswa dan dosen.
+        </p>
+    </section>
+
+    <hr style="border: 0; height: 1px; background: #eee; margin: 40px 0;">
+
+    <h2 style="text-align: center; color: #5c4b3b;">Profil Pustakawan</h2>
+    <div class="profile-card">
+        <img src="https://via.placeholder.com/200" alt="Salwa Nadira" class="profile-img">
+        
+        <div class="profile-info">
+            <h2>Salwa Nadira</h2>
+            <span class="role">Kepala Pustakawan & Digital Archival Specialist</span>
+            <p>Seorang profesional di bidang ilmu informasi yang berdedikasi dalam mengelola aset digital 
+            dan mengembangkan ekosistem literasi di lingkungan perguruan tinggi.</p>
+            
+            <a href="https://instagram.com/salwanadiira" target="_blank" class="social-link">
+                📸 Instagram: @salwanadiira
+            </a>
+
+            <a href="cv-salwa.pdf" target="_blank" class="btn-cv">Lihat CV Lengkap (PDF)</a>
+        </div>
+    </div>
+</div>
+
+<footer style="text-align: center; padding: 40px; color: #aaa; font-size: 14px;">
+    © 2026 SANADI Library | Created by Salwa Nadira
+</footer>
+
+</body>
+</html>
